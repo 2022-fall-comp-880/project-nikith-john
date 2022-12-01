@@ -64,13 +64,13 @@ Using this dataset, we can build the methods we need as mentioned above.
 
 
 ### Attributes: 
-Company
-Valuation
-Date Joined
-Industry
-City
-Country
-Continent
-Year Founded
-Funding
-Select Investors
+* Company
+* Valuation
+* Date Joined
+* Industry
+* City
+* Country
+* Continent
+* Year Founded
+* Funding
+* Select Investors
