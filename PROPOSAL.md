@@ -43,4 +43,34 @@
 > 
 > The last method returns the countries with most unicorn companies.
 
+## New Python Packages or Modules
 
+We need to import csv module in the main program and 
+* unittest
+* os
+* csv
+>
+
+
+## Dataset Documentation
+>
+The dataset consists lot of factors such as company, valuation, country, 
+industry and the year. The dataset is taken from Kaggle by "Deep Contractor".
+Link to the source:
+
+https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset
+>
+Using this dataset, we can build the methods we need as mentioned above.
+
+
+### Attributes: 
+Company
+Valuation
+Date Joined
+Industry
+City
+Country
+Continent
+Year Founded
+Funding
+Select Investors
