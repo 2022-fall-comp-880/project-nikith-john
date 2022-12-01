@@ -1,0 +1,51 @@
+Company,Valuation ($B),Date Joined,Country,City,Industry,Select Inverstors,Founded Year,Total Raised,Financial Stage,Investors Count,Deal Terms,Portfolio Exits
+Bytedance,$140,4/7/2017,China,Beijing,Artificial intelligence,"Sequoia Capital China, SIG Asia Investments, Sina Weibo, Softbank Group",2012,$7.44B,IPO,28,8,5
+SpaceX,$100.3,12/1/2012,United States,Hawthorne,Other,"Founders Fund, Draper Fisher Jurvetson, Rothenberg Ventures",2002,$6.874B,None,29,12,None
+Stripe,$95,1/23/2014,United States,San Francisco,Fintech,"Khosla Ventures, LowercaseCapital, capitalG",2010,$2.901B,Asset,39,12,1
+Klarna,$45.6,12/12/2011,Sweden,Stockholm,Fintech,"Institutional Venture Partners, Sequoia Capital, General Atlantic",2005,$3.472B,Acquired,56,13,1
+Epic Games,$42,10/26/2018,United States,Cary,Other,"Tencent Holdings, KKR, Smash Ventures",1991,$4.377B,Acquired,25,5,2
+Canva,$40,1/8/2018,Australia,Surry Hills,Internet software & services,"Sequoia Capital China, Blackbird Ventures, Matrix Partners",2012,$571.26M,None,26,8,None
+Checkout.com,$40,5/2/2019,United Kingdom,London,Fintech,"Tiger Global Management, Insight Partners, DST Global",2012,$1.83B,None,15,4,None
+Instacart,$39,12/30/2014,United States,San Francisco,"Supply chain, logistics, & delivery","Khosla Ventures, Kleiner Perkins Caufield & Byers, Collaborative Fund",2012,$2.686B,None,29,12,None
+Databricks,$38,2/5/2019,United States,San Francisco,Data management & analytics,"Andreessen Horowitz, New Enterprise Associates, Battery Ventures",2013,$3.497B,None,29,8,None
+Revolut,$33,4/26/2018,United Kingdom,London,Fintech,"index Ventures, DST Global, Ribbit Capital",2015,$1.716B,None,31,6,None
+FTX,$32,7/20/2021,Bahamas,Fintech,"Sequoia Capital, Thoma Bravo, Softbank",None,2018,$1.829B,Acq,40,3,1
+Fanatics,$27,6/6/2012,United States,Jacksonville,E-commerce & direct-to-consumer,"SoftBank Group, Andreessen Horowitz, Temasek Holdings",1995,$4.19B,None,21,10,None
+Chime,$25,3/5/2019,United States,San Francisco,Fintech,"Forerunner Ventures, Crosslink Capital, Homebrew",2013,$2.599B,Divestiture,24,9,1
+BYJU's,$21,7/25/2017,India,Bengaluru,Edtech,"Tencent Holdings, Lightspeed India Partners, Sequoia Capital India",2008,$5.183B,None,45,19,None
+Xiaohongshu,$20,3/31/2016,China,Shanghai,E-commerce & direct-to-consumer,"GGV Capital, ZhenFund, Tencent",2013,$917.5M,None,9,3,None
+J&T Express,$20,4/7/2021,Indonesia,Jakarta,"Supply chain, logistics, & delivery","Hillhouse Capital Management, Boyu Capital, Sequoia Capital China",2015,$4.653B,None,9,3,None
+Miro,$17.5,1/5/2022,United States,San Francisco,Internet software & services,"Accel, AltaIR Capital, Technology Crossover Ventures",2011,$475M,None,18,1,None
+Yuanfudao,$15.5,5/31/2017,China,Beijing,Edtech,"Tencent Holdings, Warbug Pincus, IDG Capital",2012,$4.044B,Acquired,18,7,1
+DJI Innovations,$15,1/23/2015,China,Shenzhen,Hardware,"Accel Partners, Sequoia Capital",2006,$1.135B,None,7,3,None
+SHEIN,$15,7/3/2018,China,Shenzhen,E-commerce & direct-to-consumer,"Tiger Global Management, Sequoia Capital China, Shunwei Capital Partners",2008,$553.36M,None,8,3,None
+goPuff,$15,10/8/2020,United States,Philadelphia,E-commerce & direct-to-consumer,"Accel, Softbank Group, Anthos Capital",2013,$3.397B,None,16,4,None
+Yuanqi Senlin,$15,3/1/2020,China,Beijing,Consumer & retail,"Sequoia Capital China, Longfor Capitalm, Gaorong Capital",2016,$721.31M,None,13,3,None
+Ripple,$15,12/20/2019,United States,San Francisco,Fintech,"IDG Capital, Venture51, Lightspeed Venture Partners",2012,$293.9M,Acq,34,5,1
+Plaid,$13.4,12/11/2018,United States,San Francisco,Fintech,"New Enterprise Associates, Spar Capital, Index Ventures",2012,$734.8M,None,24,5,None
+OpenSea,$13.3,7/20/2021,United States,New York,E-commerce & direct-to-consumer,"Andreessen Horowitz, Thirty Five Ventures, Sound Ventures",2017,$425.12M,None,26,2,None
+Grammarly,$13,10/10/2019,United States,San Francisco,Internet software & services,"General Catalyst, Institutional Venture Partners, Breyer Capital",2009,$400M,None,8,3,None
+Devoted Health,$12.6,10/16/2018,United States,Waltham,Health,"Andreessen Horowitz, F-Prime Capital, Venrock",2017,$1.969B,None,16,4,None
+Faire,$12.4,10/30/2019,United States,San Francisco,Artificial intelligence,"Khosla Ventures, Forerunner Ventures, Sequoia Capital",2017,$1.096B,None,14,6,None
+Brex,$12.3,10/5/2018,United States,San Francisco,Fintech,"DST Global, Ribbit Capital, Greenoaks Capital Management",2017,$1.49B,None,28,7,None
+JUUL Labs,$12,12/20/2017,United States,San Francisco,Consumer & retail,Tiger Global Management,2015,$1.49B,None,28,7,None
+Bitmain Technologies,$12,7/6/2018,China,Beijing,Hardware,"Coatue Management, Sequoia Capital China, IDG Capital",2015,$1.49B,None,28,7,None
+Biosplice Therapeutics,$12,8/6/2018,United States,San Diego,Health,"Vickers Venture Partners, IKEA GreenTech",2008,$561.5M,None,10,1,None
+GoodLeap,$12,10/13/2021,United States,Roseville,Internet software & services,"New Enterprise Associates, BDT Capital Partners, Davidson Kempner Capital Management",2003,$1.8B,None,8,1,None
+Airtable,$11.7,11/15/2018,United States,San Francisco,Internet software & services,"Caffeinated Capital, CRV, Founder Collective",2013,$1.353B,None,41,6,None
+ZongMu Technology,$11.4,6/3/2021,China,Shanghai,Auto & transportation,"LTW Capital, Legend Capital, Qualcomm Ventures",2013,$210.83M,None,19,2,None
+Global Switch,$11.1,12/22/2016,United Kingdom,London,Hardware,"Aviation Industry Corporation of China, Essence Financial, Jiangsu Sha Steel Group",1998,$6.255B,None,6,2,None
+Celonis,$11,6/26/2018,Germany,Munich,Data management & analytics,"Accel, 83North",2011,$1.368B,None,13,4,None
+Bolt,$11,10/8/2021,United States,San Francisco,Fintech,"Activant Capital, Tribe Capital, General Atlantic",2014,$963M,None,37,3,None
+Alchemy,$10.2,10/28/2021,United States,San Francisco,Fintech,"DFJ Growth Fund, Coatue Management, Addition",2017,$545M,None,27,3,None
+Weilong,$10.88,5/8/2021,China,Luohe,Consumer & retail,"Tencent Holdings, Hillhouse Capital Management, Yunfeng Capital",None,$559.74M,None,7,1,None
+Swiggy,$10.7,6/21/2018,India,Bengaluru,"Supply chain, logistics, & delivery","Accel India, SAIF Partners, Norwest Venture Partners",2014,$3.571B,Acquired,36,12,1
+Lalamove,$10,2/21/2019,Hong Kong,Cheung Sha Wan,"Supply chain, logistics, & delivery","MindWorks Ventures, Shunwei Capital Partners, Xiang He Capital",2013,$2.475B,None,15,5,None
+Figma,$10,4/30/2020,United States,San Francisco,Internet software & services,"Index Ventures, Greylock Partners, Kleiner Perkins Caufield & Byers",2012,$333.5M,None,20,6,None
+Gusto,$10,12/18/2015,United States,San Francisco,Fintech,"General Catalyst Partners, Google Ventures, Kleiner Perkins Caufield & Byers",2011,$691.12M,None,70,9,None
+reddit,$10,7/31/2017,United States,San Francisco,Internet software & services,"Y Combinator, Sequoia Capital, Coatue Management",2005,$1.326B,Acquired,33,5,1
+Talkdesk,$10,10/3/2018,United States,San Francisco,Internet software & services,"DJF, Salesforce Ventures, Storm Ventures",2011,$504.77M,None,19,6,None
+Notion Labs,$10,4/1/2020,United States,San Francisco,Internet software & services,"Index Ventures, Draft Ventures, Felicis Ventures",2016,$342M,None,17,3,None
+Thrasio,$10,7/15/2020,United States,Walpole,Other,"Upper90, RiverPark Ventures, Advent International",2018,$3.396B,Acquired,22,5,1
+Digital Currency Group,$10,11/1/2021,United States,New York,Finttech,"Ribbit Capital, capitalG, Softbank Group",2018,$3.396B,Acquired,22,5,1
+OutSystems,$9.5,6/5/2018,United States,Boston,Internet software & services,"KKR, ES Ventures, North Bridge Growth Equity",2001,$572.01M,None,13,3,None
