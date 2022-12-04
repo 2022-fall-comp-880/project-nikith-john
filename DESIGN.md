@@ -19,8 +19,10 @@
 ### What is the valuation of the individual companies?
 
 > - Under Valuation class get_valuation() method answers this query.
-> - Filter out the companies that are not acquired and store in a variable individual_companies.
-> - Print the top 10 individual companies having highest valuation stored in top_10.
+> - Filter out the companies that are not acquired and store in a variable 
+> individual_companies.
+> - Print the top 10 individual companies having the highest valuation stored
+> in top_10.
 
 ### Companies that has growth of more than 100 percent?
 
@@ -34,8 +36,10 @@
 
 > - Under Investors class get_investors() method answers this query.
 > - Create a variable investors to store the investor names
-> - Loop throught the growth companies on feature Select Investors and split on delimeter ,  and add to the variable investors created above.
-> - Print out the list of Investors that invested in companies that grew more than 100 percent
+> - Loop through-out the growth companies on feature Select Investors and split 
+> on delimiter ,  and add to the variable investors created above.
+> - Print out the list of Investors that invested in companies that grew
+> more than 100 percent
 
 ### Top 5 countries with most unicorn companies?
 
