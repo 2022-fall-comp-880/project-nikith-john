@@ -37,3 +37,9 @@
 > - Loop throught the growth companies on feature Select Investors and split on delimeter ,  and add to the variable investors created above.
 > - Print out the list of Investors that invested in companies that grew more than 100 percent
 
+### Top 5 countries with most unicorn companies?
+
+> - Under Top5 class get_top5() method answers this query.
+> - Calculate the count of companies by grouping on country and store the 
+> top5_countries in a variable.
+> - Print out the list of Top 5 Unicorn companies (top5_countries).
