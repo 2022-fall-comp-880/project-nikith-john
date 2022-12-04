@@ -22,3 +22,11 @@
 - Filter out the companies that are not acquired and store in a variable individual_companies.
 - Print the top 10 individual companies having highest valuation stored in top_10.
 =======
+
+### Companies that has growth of more than 100 percent?
+
+> - Under Growth class get_growth() method answers this query.
+> - Filter out the companies that have growth more than 100 percentage and 
+> store in a variable output.
+> - Print out the list of companies that has growth of more than 100 percent 
+> using variable output.
