@@ -15,3 +15,10 @@
 > Clean up the and perform Feature Engineering. Create a feature `Growth` using
 > `Valuation ($B)` and `Total Raised` columns and sore in the `df` variable.
 > - `get_data()` method returns the `df` variable.
+
+### What is the valuation of the individual companies?
+
+- Under Valuation class get_valuation() method answers this query.
+- Filter out the companies that are not acquired and store in a variable individual_companies.
+- Print the top 10 individual companies having highest valuation stored in top_10.
+=======
