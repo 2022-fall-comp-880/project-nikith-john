@@ -28,3 +28,29 @@ class Valuation:
         top_10 = sorted(individual_companies, key=lambda x: x[1], reverse=True)[:10]
         top_10 = [x[0] for x in top_10]
         return top_10
+
+class Growth:
+    """Companies that has growth of more than 100 percent.
+    Iterates through companies from dataframe and appends if the company grew
+    more than 100 percent."""
+
+    def __init__(self, df) -> None:
+        """
+        :param df: dataframe
+        """
+        self.df = df
+
+    def get_growth(self):
+        """
+        Appends the company that grew more than 100 percent.
+        :return List of companies that grew more than 100 percent.
+        :rtype: List
+        """
+        output = []
+        for row in self.df:
+            if row[6] > 100:
+                output.append(row)
+
+        out = [x[0] for x in output]
+        return out
+
