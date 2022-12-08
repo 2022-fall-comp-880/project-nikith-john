@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Valuation
+from apps.main import Main, Valuation
 
 
 class TestGetValuation(unittest.TestCase):
