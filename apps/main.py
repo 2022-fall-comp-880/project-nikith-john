@@ -104,4 +104,75 @@ class Investors:
             return counter
 
 
+class Main:
+    """Main class read the CSV and creates the data."""
+
+    def __init__(self, file_path) -> None:
+        self.file_path = file_path
+        data = self.read_csv()
+        self.df = self.feature_engineering(data)
+
+    def get_data(self):
+        """
+        :return: df
+        """
+        return self.df
+
+    def read_csv(self):
+        """
+        Read the CSV and skip unwanted columns.
+        :return: df
+        :rtype: list
+        """
+        skip_columns = [
+            "Date Joined",
+            "City",
+            "Founded Year",
+            "Investors Count",
+            "Deal Terms",
+            "Portfolio Exits",
+            "Industry",
+        ]
+
+        df = []
+        with open(self.file_path, encoding="utf-8", newline="") as csv_file:
+            reader = csv.DictReader(csv_file)
+            for row in reader:
+                df.append([v for k, v in row.items() if k not in skip_columns])
+        return df
+
+    def feature_engineering(self, df):
+        """
+        Create the data feature engineering, and append the data into it
+        in the required format for each different attribute.
+        :param df: The dataframe that we created in read_csv
+        :return: fe
+        :rtype: list
+        """
+        fe = []
+        for row in df:
+            temp = []
+            temp.append(row[0])
+            ## Convert currency to float
+            val = float(row[1].replace("$", ""))
+            temp.append(val)
+            temp.append(row[2])
+            temp.append(row[3])
+            tr = row[4].replace("$", "")
+            if tr == "None":
+                tr = 0.0
+            else:
+                if "M" in tr:
+                    tr = float(tr[:-1]) / 1000
+                elif "K" in tr:
+                    tr = float(tr[:-1]) / 1000000
+                else:
+                    tr = float(tr[:-1])
+            temp.append(tr)
+            temp.append(row[5].replace("Acq", "Acquired"))
+            # growth
+            growth = (val - tr) * 100 / tr if tr != 0.0 else 0.0
+            temp.append(growth)
+            fe.append(temp)
+        return fe
 
