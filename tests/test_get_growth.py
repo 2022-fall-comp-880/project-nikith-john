@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Growth
+from apps.main import Main, Growth
 
 
 class TestGetGrowth(unittest.TestCase):

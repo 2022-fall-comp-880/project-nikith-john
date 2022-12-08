@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Investors
+from apps.main import Main, Investors
 
 
 class TestGetInverstors(unittest.TestCase):

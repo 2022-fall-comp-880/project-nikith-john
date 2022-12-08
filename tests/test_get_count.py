@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Count
+from apps.main import Main, Count
 
 
 class TestCount(unittest.TestCase):
