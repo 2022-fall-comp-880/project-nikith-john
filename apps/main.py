@@ -54,3 +54,33 @@ class Growth:
         out = [x[0] for x in output]
         return out
 
+class Investors:
+    """List of Investors that invested in companies that grew more than
+    100 percent."""
+
+    def __init__(self, df) -> None:
+        """
+        :parameter df: dataframe
+        """
+        self.df = df
+
+    def get_investors(self):
+        """ Create an empty list output
+                Reads from df(dataframe), for iterator row in dataframe and
+                appends in empty list 'investors' that grow more than 100%
+                :return: sorted set of investors
+        """
+        output = []
+        for row in self.df:
+            if row[6] > 100:
+                output.append(row)
+
+        investors = []
+
+        for row in output:
+            investors.extend(row[3].split(", "))
+
+        return sorted(set(investors))
+
+
+
