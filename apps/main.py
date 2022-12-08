@@ -82,26 +82,26 @@ class Investors:
 
         return sorted(set(investors))
 
-    class Count:
-        """Number of unicorn companies in a country."""
+class Count:
+    """Number of unicorn companies in a country."""
 
-        def __init__(self, df) -> None:
-            self.df = df
+    def __init__(self, df) -> None:
+        self.df = df
 
-        def get_count(self):
-            """
-            Create a dictionary with country as key and number of unicorns as
-            value.
-            :return: count.
-            :rtype: dictionary.
-            """
-            counter = {}
-            for row in self.df:
-                if row[2] in counter:
-                    counter[row[2]] += 1
-                else:
-                    counter[row[2]] = 1
-            return counter
+    def get_count(self):
+        """
+        Create a dictionary with country as key and number of unicorns as
+        value.
+        :return: count.
+        :rtype: dictionary.
+        """
+        counter = {}
+        for row in self.df:
+            if row[2] in counter:
+                counter[row[2]] += 1
+            else:
+                counter[row[2]] = 1
+        return counter
 
 
 class Main:
