@@ -1,6 +1,6 @@
 # Unicorn Company
 
-## Contributors: Nikith Kaithalapuram & John Evans Tallapally 
+## Contributors:Nikith Kaithalapuram `https://github.com/NIK8H` & John Evans Tallapally  `https://github.com/johnevans096`
 
 ## Source Files
 
@@ -44,6 +44,6 @@
 
 ### Number of unicorn companies in a country.
 
-- Under `Count` class `get_count()` method answers this query.
-- Calculate the count of companies by grouping on `country` and store the `counter` in a variable.
-- Print out the `counter` dictionary with country as key and number of unicorns as value.
+> - Under `Count` class `get_count()` method answers this query.
+> - Calculate the count of companies by grouping on `country` and store the `counter` in a variable.
+> - Print out the `counter` dictionary with country as key and number of unicorns as value.
