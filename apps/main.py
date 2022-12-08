@@ -176,3 +176,33 @@ class Main:
             fe.append(temp)
         return fe
 
+if __name__ == "__main__":
+    data_dir = os.path.dirname(__file__) + "/../data/full_data.csv"
+    main = Main(data_dir)
+    df = main.get_data()
+    valuation = Valuation(df)
+    print("Top 10 Valued Individual Comapnies: ", valuation.get_valuation())
+    growth = Growth(df)
+    print("\nComanies that has growth of more than 100 percent are:")
+    print(growth.get_growth())
+    investors = Investors(df)
+    print("\nInvestors that invested in companies that grew more than 100 percent are:")
+    print(investors.get_investors())
+    count = Count(df)
+    print("\nNumber of unicorn companies in a country:")
+    print(count.get_count())
+    string_top10 = str(valuation.get_valuation())
+    string_growth = str(growth.get_growth())
+    string_investors = str(investors.get_investors())
+    string_count = str(count.get_count())
+    file = open('outputdata.txt', 'w')
+    file.write("Top 10 Unicorn Companies:\n")
+    file.write(string_top10)
+    file.write("\n\nCompanies that grew more than 100 percent:\n")
+    file.write(string_growth)
+    file.write(
+        "\n\nInvestors that invested in companies which grew more than 100 percent:\n")
+    file.write(string_investors)
+    file.write("\n\nCountries with number of Unicorn companies:\n")
+    file.write(string_count)
+    file.close()
