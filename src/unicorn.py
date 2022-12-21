@@ -24,6 +24,35 @@ class Unicorn:
                 unicorn_info_row = f'{company},{valuation},{country},{industry},{investor},{fundsraised}\n'
                 unicorn_info_file_obj.write(unicorn_info_row)
 
+    def get_valuation(self) -> list:
+        """
+        Method to get companies with top 10 valuation.
+        :return: individual_companies
+        :rtype: list
+        """
+        i = 0
+        individual_companies = []
+        for company in self.unicorn_info:
+            if i < 10:
+                individual_companies.append(company)
+                i = i + 1
+        print(individual_companies)
+        return individual_companies
+
+    def get_growth(self) -> list:
+        """
+        Method to get companies that grew more than 100 percent.
+        :return: growth_company
+        :rtype: list
+        """
+        growth_company = []
+        for company, valuation, _, _, _, fundsraised in self.unicorn_info:
+            g_logic = fundsraised * 2
+            if valuation > g_logic:
+                growth_company.append(company)
+        print(growth_company)
+        return growth_company
+
     @staticmethod
     def create_standard_dataset() -> "Unicorn":
         """
