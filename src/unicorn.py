@@ -53,6 +53,39 @@ class Unicorn:
         print(growth_company)
         return growth_company
 
+    def get_investors(self) -> set:
+        """
+        Method to get the list of unique investors.
+        :return: investor_list
+        :rtype: set
+        """
+        investors_list = []
+        for _, _, _, _, investor,_ in self.unicorn_info:
+            investors_list.append(investor)
+        print(sorted(set(investors_list)))
+        return sorted(set(investors_list))
+
+    def get_top_countries(self) -> dict:
+        """
+        Method to get the country and the number of companies in it.
+        :return: top_countries
+        :rtype: dictionary
+        """
+        top_countries = {}
+        for _, _, _, country, _, _ in self.unicorn_info:
+            if country in top_countries:
+                top_countries[country] += 1
+            else:
+                top_countries[country] = 1
+        print(top_countries)
+        return top_countries
+
+
+
+    def __str__(self):
+        """Create string representation of data."""
+        return str(self.unicorn_info)
+
     @staticmethod
     def create_standard_dataset() -> "Unicorn":
         """
