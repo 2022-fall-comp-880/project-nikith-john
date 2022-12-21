@@ -47,3 +47,28 @@ company has grown more than 100 percent.
 > * So, we iterate through 'valuation' using if condition. If 'valuation' is 
 greater than 'fundsraised*2', append to 'growth_company'.
 > * Return 'get_company'
+
+### def get_investors
+> Parameters: None
+> 
+> Returns: sorted set of investors_list
+> 
+> Design steps: 
+> * Create an empty list 'investors_list'.
+> * We will iterate through 'investor' in 'self.unicorn_info'.
+> * We will append all the investors to 'investor_list'.
+> * Then we return sorted set of investors so that we don't have duplicates 
+> and we get the output in alphabetical order.
+
+### def get_top_countries
+> Parameters: None
+> 
+> Returns: 'top_countries' - Dictionary with key as country and value as 
+> number of companies in it.
+> 
+> Design steps:
+> * Create an empty dictionary.
+> * We will iterate through country in 'self.unicorn_info'.
+> * We use if condition to iterate and every time we come accross a particular 
+> * country, the number of 'country' will be added.
+> * Return 'top_countries'.
