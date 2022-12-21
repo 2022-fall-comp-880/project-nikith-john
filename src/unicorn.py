@@ -765,6 +765,14 @@ class Unicorn:
             idx += 1
         return Unicorn(unicorn_info)
 
+def main():
+    unicorn_data: Unicorn = Unicorn.create_standard_dataset()
+    print(unicorn_data)
+    Unicorn.get_valuation(Unicorn.create_standard_dataset())
+    Unicorn.get_growth(Unicorn.create_standard_dataset())
+    Unicorn.get_investors(Unicorn.create_standard_dataset())
+    Unicorn.get_top_countries(Unicorn.create_standard_dataset())
+
 
 if __name__ == '__main__':
     main()
