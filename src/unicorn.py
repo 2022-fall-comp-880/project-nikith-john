@@ -1,6 +1,12 @@
+"""
+Codebase for Unicorn.
+"""
 import csv
 
 class Unicorn:
+    """
+    Class Unicorn for function methods.
+    """
     def __init__(self, unicorn_info: list):
         """
         Method to initiate unicorn_info for dataset.
@@ -20,8 +26,10 @@ class Unicorn:
         """
         self.unicorn_info_row = unicorn_info_row
         with open(filename, 'w', encoding='utf8') as unicorn_info_file_obj:
-            for company, valuation, country, industry, investor, fundsraised in self.unicorn_info:
-                unicorn_info_row = f'{company},{valuation},{country},{industry},{investor},{fundsraised}\n'
+            for company, valuation, country, industry, investor, fundsraised in \
+                self.unicorn_info:
+                unicorn_info_row = f'{company},{valuation},{country},' \
+                                   f'{industry},{investor},{fundsraised}\n'
                 unicorn_info_file_obj.write(unicorn_info_row)
 
     def get_valuation(self) -> list:
@@ -60,7 +68,7 @@ class Unicorn:
         :rtype: set
         """
         investors_list = []
-        for _, _, _, _, _, investor in self.unicorn_info:
+        for _, _, _, _, investor, _ in self.unicorn_info:
             investors_list.append(investor)
         print(sorted(set(investors_list)))
         return sorted(set(investors_list))
@@ -726,10 +734,6 @@ class Unicorn:
                                  fundsraiseds[idx]))
         return Unicorn(unicorn_info)
 
-
-    def __str__(self):
-        """Create string representation of data."""
-        return str(self.unicorn_info)
 
 
     @staticmethod
