@@ -60,7 +60,7 @@ class Unicorn:
         :rtype: set
         """
         investors_list = []
-        for _, _, _, _, investor,_ in self.unicorn_info:
+        for _, _, _, _, _, investor in self.unicorn_info:
             investors_list.append(investor)
         print(sorted(set(investors_list)))
         return sorted(set(investors_list))
