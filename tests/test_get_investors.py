@@ -7,19 +7,12 @@ from src.unicorn import Unicorn
 class TestPlayerInvestors(TestCase):
     """Test get_investors() method."""
 
-    def test_get_investors_empty(self):
-        """Test using unicorn_empty.txt."""
-        input_file = "unicorn_empty.txt"
-        unicorn_data = Unicorn.read_dataset(input_file)
-        actual_result = unicorn_data.get_investors()
-        self.assertDictEqual(actual_result, {})
-
     def test_get_investors_first_5(self):
         """Test using unicorn_first_5.txt."""
         input_file = "unicorn_first_5.txt"
         unicorn_data = Unicorn.read_dataset(input_file)
         actual_result = unicorn_data.get_investors()
-        expected =
+        expected = ['Sequoia Capital China;SIG Asia Investments;Sina Weibo;Softbank Group']
         self.assertDictEqual(actual_result, expected)
 
     def test_get_investors_last_2(self):
@@ -27,7 +20,7 @@ class TestPlayerInvestors(TestCase):
         input_file = "unicorn_last_2.txt"
         unicorn_data = Unicorn.read_dataset(input_file)
         actual_result = unicorn_data.get_investors()
-        expected_result =
+        expected_result = ['Sequoia Capital China;SIG Asia Investments;Sina Weibo;Softbank Group']
         self.assertDictEqual(actual_result, expected_result)
 
 

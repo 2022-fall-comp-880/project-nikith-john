@@ -1,0 +1,5 @@
+Bytedance,180,Artificial intelligence,China,8,'Sequoia Capital China;SIG Asia Investments;Sina Weibo;Softbank Group'
+SpaceX,100,Other,United States,7,'Founders Fund;Draper Fisher Jurvetson;Rothenberg Ventures'
+SHEIN,100,E-commerce direct-to-consumer,China,2,'Tiger Global Management; Sequoia Capital China; Shunwei Capital Partners'
+Stripe,95,Fintech,United States,2,'Khosla Ventures; LowercaseCapital; capitalG'
+Klarna,46,Fintech,Sweden,4,'Institutional Venture Partners; Sequoia Capital; General Atlantic'

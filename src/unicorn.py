@@ -749,6 +749,7 @@ class Unicorn:
         fundsraiseds = []
         with open(filename, "r") as file:
             csv_reader = csv.reader(file, quotechar=",")
+            print(csv_reader)
             for company, valuation, industry, country, investor, fundsraised in csv_reader:
                 companies.append(company)
                 valuations.append(valuation)
