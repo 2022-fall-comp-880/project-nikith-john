@@ -76,77 +76,51 @@ What is the idea of the input-to output transformation?
 * Module Name: test_get_count.py
 * Class Name : TestGetCount
 
-### *test_get_count_empty*
-* This method input is  
-* out put is 
-* This output can be verified from 
-
 ### *test_get_count_first_5*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* This method input is unicorn_first_5.txt
+* output is dictionary of country with number of companies.
 
 ### *test_get_count_last_2*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* This method input is unicorn_last_2.txt
+* dictionary of country with number of companies.
 
 ## *second_module:*
 * Module Name: test_get_growth.py
-* Class Name : TestPlayerGrowth
-
-### *test_get_growth_empty*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* Class Name : TestUnicornGrowth
 
 ### *test_get_growth_first_5*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* This method input is unicorn_first_5.txt
+* output is list of companies with more than 100 percent growth.
 
-### *test_get_growth_last_5*
-* This method input is 
-* out put is 
+### *test_get_growth_last_2*
+* This method input is unicorn_last_2.txt
+* output is list of companies with more than 100 percent growth.
 * This output can be verified from 
 
 ## *third_module:*
 * Module Name: test_get_investors.py
-* Class Name : TestPlayerInvestors
-
-### *test_get_investors_empty*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* Class Name : TestUnicornInvestors
 
 ### *test_get_investors_first_5*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* This method input is unicorn_first_5.txt
+* output is sorted set of investors.
 
 ### *test_get_investors_last_2*
-* This method input is 
-* out put is 
+* This method input is unicorn_last_2.txt
+* output is sorted set of investors. 
 * This output can be verified from 
 
 ## *fourth_module:*
 * Module Name: test_get_valuation.py
-* Class Name : TestPlayerValuation
+* Class Name : TestUnicornValuation
+
+### *test_get_valuation_first_5*
+* This method input is unicorn_first_5.txt
+* output is list of tuples with company details.
 
 ### *test_get_valuation_last_2*
-* This method input is 
-* out put is 
-* This output can be verified from 
-
-### *test_get_valuation_last_2*
-* This method input is 
-* out put is 
-* This output can be verified from 
-
-### *test_get_valuation_last_2*
-* This method input is 
-* out put is 
-* This output can be verified from 
+* This method input is unicorn_last_2.txt
+* output is  list of tuples with company details.
 
 
 ## 4. Results 

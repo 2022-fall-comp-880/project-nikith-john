@@ -4,7 +4,7 @@ import unittest
 from unittest import TestCase
 from src.unicorn import Unicorn
 
-class TestPlayerInvestors(TestCase):
+class TestUnicornInvestors(TestCase):
     """Test get_investors() method."""
 
     def test_get_investors_first_5(self):
@@ -13,15 +13,15 @@ class TestPlayerInvestors(TestCase):
         unicorn_data = Unicorn.read_dataset(input_file)
         actual_result = unicorn_data.get_investors()
         expected = ['Sequoia Capital China;SIG Asia Investments;Sina Weibo;Softbank Group']
-        self.assertDictEqual(actual_result, expected)
+        self.assertEqual(actual_result, expected)
 
     def test_get_investors_last_2(self):
         """Test using nba_last_2.txt."""
         input_file = "unicorn_last_2.txt"
         unicorn_data = Unicorn.read_dataset(input_file)
         actual_result = unicorn_data.get_investors()
-        expected_result = ['Sequoia Capital China;SIG Asia Investments;Sina Weibo;Softbank Group']
-        self.assertDictEqual(actual_result, expected_result)
+        expected = ["'Morgan Creek Digital'", "IAG Capital Partners'"]
+        self.assertEqual(actual_result, expected)
 
 
 
