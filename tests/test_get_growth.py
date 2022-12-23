@@ -16,6 +16,7 @@ class TestUnicornGrowth(TestCase):
         self.assertEqual(actual_result, expected)
 
     def test_get_growth_last_2(self):
+        """Test using unicorn_last_2.txt"""
         input_file = "unicorn_last_2.txt"
         unicorn_data = Unicorn.read_dataset(input_file)
         actual_result = unicorn_data.get_growth()
