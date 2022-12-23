@@ -1,2 +1,2 @@
 Gemini,7,Fintech,United States,0.42,'Morgan Creek Digital'
-Zopa,1,Fintech,United Kingdom,0.79,IAG Capital Partners'
+Zopa,1,Fintech,United Kingdom,0.79,'IAG Capital Partners'

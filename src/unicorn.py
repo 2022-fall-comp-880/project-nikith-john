@@ -29,7 +29,7 @@ class Unicorn:
             for company, valuation, country, industry, investor, fundsraised in \
                 self.unicorn_info:
                 unicorn_info_row = f'{company},{valuation},{country},' \
-                                   f'{industry},{investor},{fundsraised}\n'
+                                   f'{industry},{fundsraised},{investor}\n'
                 unicorn_info_file_obj.write(unicorn_info_row)
 
     def get_valuation(self) -> list:
@@ -54,8 +54,8 @@ class Unicorn:
         :rtype: list
         """
         growth_company = []
-        for company, valuation, _, _, _, fundsraised in self.unicorn_info:
-            g_logic = fundsraised * 2
+        for company, valuation, _, _, fundsraised, _ in self.unicorn_info:
+            g_logic = (fundsraised * 2)
             if valuation > g_logic:
                 growth_company.append(company)
         print(growth_company)
@@ -68,7 +68,7 @@ class Unicorn:
         :rtype: set
         """
         investors_list = []
-        for _, _, _, _, investor, _ in self.unicorn_info:
+        for _, _, _, _, _, investor in self.unicorn_info:
             investors_list.append(investor)
         print(sorted(set(investors_list)))
         return sorted(set(investors_list))
@@ -730,8 +730,8 @@ class Unicorn:
         unicorn_info = []
         for idx, company in enumerate(companies):
             unicorn_info.append((company, valuations[idx], industries[idx],
-                                 countries[idx], investors[idx],
-                                 fundsraiseds[idx]))
+                                 countries[idx], fundsraiseds[idx],
+                                 investors[idx]))
         return Unicorn(unicorn_info)
 
 
@@ -749,28 +749,33 @@ class Unicorn:
         valuations = []
         industries = []
         countries = []
-        investors = []
         fundsraiseds = []
+        investors = []
         with open(filename, "r") as file:
             csv_reader = csv.reader(file, quotechar=",")
             print(csv_reader)
-            for company, valuation, industry, country, investor, fundsraised in csv_reader:
+            for company, valuation, industry, country, fundsraised, investor in csv_reader:
                 companies.append(company)
                 valuations.append(valuation)
                 industries.append(industry)
                 countries.append(country)
-                investors.append(investor)
                 fundsraiseds.append(fundsraised)
+                investors.append(investor)
         unicorn_info = []
         idx = 0
         for company in companies:
             unicorn_info.append((company, valuations[idx], industries[idx],
-                                 countries[idx], investors[idx],
-                                 fundsraiseds[idx]))
+                                 countries[idx], fundsraiseds[idx],
+                                 investors[idx]))
             idx += 1
         return Unicorn(unicorn_info)
 
 def main():
+    """
+    Main function to get the results.
+    :return: None
+    :rtype: None
+    """
     unicorn_data: Unicorn = Unicorn.create_standard_dataset()
     print(unicorn_data)
     Unicorn.get_valuation(Unicorn.create_standard_dataset())
